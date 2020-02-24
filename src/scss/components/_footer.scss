@@ -1,59 +1,60 @@
 .footer {
-  margin-top: 2rem;
+	margin-top: 7rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 
-  &__copyright {
-    display: block;
-    @include text();
-    text-align: center;
-    line-height: 4rem;
+	&__copyright {
+		@include text();
+		line-height: 4rem;
 
-    span {
-      color: crimson;
-    }
+		&:hover {
+			color: initial;
+		}
 
-    &:hover {
-      color: initial;
-    }
+		a {
+			color: inherit;
+			text-decoration: underline;
 
-    a {
-      color: inherit;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
 
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
+	.logo {
+		margin-top: 1.3rem;
 
-  .logo {
-    float: right;
+		@include respond('as') {
+			justify-content: center;
+		}
 
-    @include respond('as') {
-      justify-content: center;
-      margin-bottom: 1rem;
-    }
+		&--github {
+			width: 4rem;
+			height: 4rem;
+			fill: blue;
+		}
+	}
 
-    &--github {
-      width: 4rem;
-      height: 4rem;
-      fill: blue;
-    }
-  }
+	&__link {
+		margin-left: 2rem;
+		position: relative;
 
-  &__link {
-    margin-left: 2rem;
-    position: relative;
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 3px;
+			height: 3px;
+			border-radius: 100%;
+			background-color: #777777;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: -1.2rem;
+		}
 
-    &::before {
-      content: '';
-      display: inline-block;
-      width: 3px;
-      height: 3px;
-      border-radius: 100%;
-      background-color: white;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: -1.2rem;
-    }
-  }
+		&:nth-child(1) {
+			&::before { display: none; }
+		}
+	}
 }

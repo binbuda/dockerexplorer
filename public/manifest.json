@@ -1,6 +1,6 @@
 {
-  "short_name": "Git Explorer",
-  "name": "Git Explorer",
+  "short_name": "Docker Explorer",
+  "name": "Docker Explorer",
   "icons": [
     {
       "src": "favicon.ico",
