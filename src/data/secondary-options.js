@@ -10,7 +10,7 @@ export const secondaryOptions = {
             value: 'docker-assemble',
             label: 'Assemble is a high-level build tool',
             usage: '',
-            nb: 'This command is only available on Docker Enterprise Edition. Learn more about Docker Enterprise products. <br><br><br> This command is experimental on the Docker client. It should not be used in production environments. To enable experimental features in the Docker CLI, edit the <a href="https://docs.docker.com/engine/reference/commandline/cli/#configuration-files">config.json</a> and set experimental to enabled. Start building a Docker Application package. If there is a docker-compose.yml file in the current directory it will be copied and used.',
+            nb: '<span class="docker-enterprise-warn">This command is only available on Docker Enterprise Edition.</span> <br><br><br> <span class="docker-warn">This command is experimental on the Docker client.</span> It should not be used in production environments. To enable experimental features in the Docker CLI, edit the <a href="https://docs.docker.com/engine/reference/commandline/cli/#configuration-files">config.json</a> and set <span class="tag-highlight">experimental</span> to <span class="tag-highlight">enabled</span>. Start building a Docker Application package. If there is a docker-compose.yml file in the current directory it will be copied and used.',
         },
         {
             value: 'docker-attach',
