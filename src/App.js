@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Footer, Nav } from 'components';
-import Typist from 'react-typist';
+// import Typist from 'react-typist';
 import { isMobile } from 'react-device-detect';
 import { optionsFirst, optionsSecond, optionsThird } from 'data/index';
 import Select from 'react-select';
@@ -125,7 +125,8 @@ class App extends Component {
             usage,
             copied
         } = this.state;
-        const avgTypingDelay = fastType ? 0 : 50;
+        
+        // const avgTypingDelay = fastType ? 0 : 50;
 
         return (
             <div className={classnames('home', { dark })}>
@@ -138,7 +139,7 @@ class App extends Component {
                                     Docker <span>Command</span> Explorer
                                 </h2>
                                 <p className="content__subtitle dark-grey">
-                                    Find the right commands you need quickly, without digging through <a href="#">Docker.com</a>
+                                    Find the right commands you need quickly, without digging through <a href="http://docker.com" target="_blank" rel="noopener noreferrer" className="_">Docker.com</a>
                                 </p>
                                 <div className="options">
                                     <h4 className="options__title">I want to:</h4>
