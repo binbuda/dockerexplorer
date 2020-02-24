@@ -347,11 +347,11 @@ body {
       .home__container {
         padding: 3rem; } }
   .home.dark {
-    background: #20252d; }
+    background: #101e26; }
     .home.dark .dark-white {
       color: #fff !important; }
     .home.dark .board {
-      background: rgba(255, 255, 255, 0.2) !important; }
+      background: #1f3341 !important; }
     .home.dark .dark-grey {
       color: rgba(255, 255, 255, 0.8) !important; }
   .home .container {
@@ -394,7 +394,7 @@ body {
     flex: 1;
     padding-top: 10rem; }
     .home .content__title {
-      color: #20252d;
+      color: #101e26;
       letter-spacing: 1px; }
       .home .content__title span {
         color: #077cbc; }
@@ -458,7 +458,7 @@ body {
       .home .content .boards {
         margin-bottom: 15rem; } }
     .home .content .board {
-      background: #20252d;
+      background: #101e26;
       border-radius: 1rem;
       border-left: 1rem solid #077cbc;
       display: flex;
@@ -468,9 +468,10 @@ body {
       .home .content .board .faded {
         opacity: 0.5; }
       .home .content .board pre {
-        margin: 0; }
+        margin: 0;
+        width: calc(100% - 40px); }
       .home .content .board__title {
-        color: #20252d;
+        color: #101e26;
         letter-spacing: 1px;
         margin-bottom: 1rem; }
       .home .content .board__option-title {
@@ -505,7 +506,10 @@ body {
         letter-spacing: 1px;
         font-weight: normal; }
         .home .content .board * > a {
-          color: #077cbc !important; }
+          color: #077cbc !important;
+          text-decoration: underline; }
+          .home .content .board * > a:hover {
+            color: #fff !important; }
 
 .Typist {
   white-space: pre-wrap; }
@@ -516,12 +520,13 @@ body {
   .copy__image {
     cursor: pointer;
     position: relative;
-    width: 2rem; }
+    width: 2rem;
+    margin-top: -5px; }
   .copy__popover {
     background: #fff;
     border-radius: 0.3rem;
     bottom: 50%;
-    color: #20252d !important;
+    color: #101e26 !important;
     display: inline-block;
     font-size: 1rem;
     padding: 0.2rem 0.5rem;
@@ -699,8 +704,8 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 3px;
-  height: 3px; }
+  width: 5px;
+  height: 5px; }
 
 /* Track */
 ::-webkit-scrollbar-track {

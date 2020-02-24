@@ -22,7 +22,7 @@
         }
 
         .board {
-            background: rgba($color-white, 0.2) !important;
+            background: #1f3341 !important;
         }
 
         .dark-grey {
@@ -247,6 +247,11 @@
 
                 & > a {
                     color: $color-primary !important;
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: $color-white !important;
+                    }
                 }
             }
         }
