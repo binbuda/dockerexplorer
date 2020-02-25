@@ -12,7 +12,7 @@ class App extends Component {
         super(props);
         this.state = {
             dark: JSON.parse(localStorage.getItem('dark')) || false,
-            fastType: JSON.parse(localStorage.getItem('fastType')) || false,
+            // fastType: JSON.parse(localStorage.getItem('fastType')) || false,
             firstOption: null,
             showSecond: false,
             secondOption: null,
@@ -142,7 +142,7 @@ class App extends Component {
                                     Find the right commands you need quickly, without digging through <a href="http://docker.com" target="_blank" rel="noopener noreferrer" className="_">docker.com</a>
                                 </p>
                                 <div className="options">
-                                    <h4 className="options__title">In:</h4>
+                                    <h4 className="options__title dark-white">In:</h4>
                                     <Select
                                         placeholder="..."
                                         className="options-select"
@@ -152,7 +152,7 @@ class App extends Component {
                                         value={firstOption}
                                         options={optionsFirst}
                                     />
-                                    {showSecond ? ( <h4 className="options__title">I want to:</h4> ) : null}
+                                    {showSecond ? ( <h4 className="options__title dark-white">I want to:</h4> ) : null}
                                     {showSecond ? (
                                         
                                         <Select
@@ -180,7 +180,7 @@ class App extends Component {
                             </div>
                             <div className="col-7 boards">
                                 <div className={`board__group board__group--1 ${isMobile && !usage ? ' d-none' : ''}`}>
-                                    {usage.length ? ( <h2 className="board__title  dark-white">Usage</h2> ) : null}
+                                    {usage.length ? ( <h2 className="board__title dark-white">Usage</h2> ) : null}
                                     {usage.length ? (
                                         <div className="board board--1">
                                             <pre>
