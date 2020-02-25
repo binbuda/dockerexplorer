@@ -11,7 +11,7 @@
 ### Intro
 Last year, we came across [Sarah Drasner's array explorer](https://github.com/sdras/array-explorer). It is a really cool resource for anyone to easily figure out the best JS array method to use. We loved it and decided to build something similar for Docker.
 
-Website: [Click to find the right git commands without digging through the web.](https://dockerexplorer.com)
+Website: [Find the right commands you need quickly, without digging through docker.com](https://dockerexplorer.com)
 
 ### Tech Stack
 - React
@@ -30,7 +30,7 @@ docker-compose up
 ```
 
 ### Makers
-Awesome devs and designer at [Binbuda](https://binbuda.io)
+Forking and developing at [Binbuda](https://binbuda.io)
 Awesome devs and designer at [Summitech](https://summitech.ng)
 
 ### Contribute
@@ -109,7 +109,7 @@ then supply `tertiary-options.js` file the necessary data e.g.
 
 ### Donate
 
-You can also contribute to the continued success of the project via donation. Please click this [link](https://opencollective.com/binbuda).
+You can also contribute to the continued success of the project via donation. Please click this [link](#).
 
 ### RoadMap
 
