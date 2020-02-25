@@ -64,7 +64,8 @@ These three files are responsible for the options a user can pick.
         {
             value: 'logs',
             label: 'commit logs/history'
-        },
+        }
+    ]
 ```
 The `nb` is optional. It is responsible for what the user sees in the notes section. 
   
@@ -76,7 +77,8 @@ The `nb` is optional. It is responsible for what the user sees in the notes sect
         {
             value: 'logs',
             label: 'commit logs/history'
-        },
+        }
+    ]
 ```
   
 then supply `tertiary-options.js` file the necessary data e.g.
