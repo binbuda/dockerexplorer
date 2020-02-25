@@ -139,10 +139,10 @@ class App extends Component {
                                     Docker <span>Command</span> Explorer
                                 </h2>
                                 <p className="content__subtitle dark-grey">
-                                    Find the right commands you need quickly, without digging through <a href="http://docker.com" target="_blank" rel="noopener noreferrer" className="_">Docker.com</a>
+                                    Find the right commands you need quickly, without digging through <a href="http://docker.com" target="_blank" rel="noopener noreferrer" className="_">docker.com</a>
                                 </p>
                                 <div className="options">
-                                    <h4 className="options__title">I want to:</h4>
+                                    <h4 className="options__title">In:</h4>
                                     <Select
                                         placeholder="..."
                                         className="options-select"
@@ -152,7 +152,9 @@ class App extends Component {
                                         value={firstOption}
                                         options={optionsFirst}
                                     />
+                                    {showSecond ? ( <h4 className="options__title">I want to:</h4> ) : null}
                                     {showSecond ? (
+                                        
                                         <Select
                                             placeholder="..."
                                             className="options-select"
