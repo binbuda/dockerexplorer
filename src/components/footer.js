@@ -20,7 +20,7 @@ const Footer = props => (
                 Twitter
             </a>
             <a
-                href="https://rave.flutterwave.com/donate/bavfmdlomzs2"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer__link"
