@@ -1,14 +1,8 @@
 export const secondaryOptions = {
     "docker-cli": [
         {
-            value: 'docker-app',
-            label: 'Application',
-            usage: '',
-            nb: 'A tool to build and manage Docker Applications.',
-        },
-        {
             value: 'docker-assemble',
-            label: 'Assemble is a high-level build tool',
+            label: 'Open assemble, which is a high-level build tool',
             usage: '',
             nb: '<span class="docker-enterprise-warn">This command is only available on Docker Enterprise Edition.</span> <br><br><br> <span class="docker-warn">This command is experimental on the Docker client.</span> It should not be used in production environments. To enable experimental features in the Docker CLI, edit the <a href="https://docs.docker.com/engine/reference/commandline/cli/#configuration-files">config.json</a> and set <span class="tag-highlight">experimental</span> to <span class="tag-highlight">enabled</span>. Start building a Docker Application package. If there is a docker-compose.yml file in the current directory it will be copied and used.',
         },
@@ -25,30 +19,6 @@ export const secondaryOptions = {
             nb: 'The docker build command builds Docker images from a Dockerfile and a “context”. A build’s context is the set of files located in the specified PATH or URL. The build process can refer to any of the files in the context. For example, your build can use a COPY instruction to reference a file in the context. The URL parameter can refer to three kinds of resources: Git repositories, pre-packaged tarball contexts and plain text files. <br><br> <span class="board__option-title">Options</span> <table><thead> <tr> <td>Name, shorthand</td> <td>Default</td> <td>Description</td> </tr></thead><tbody> <tr> <td><code class="highlighter-rouge">--add-host</code></td> <td></td> <td>Add a custom host-to-IP mapping (host:ip)</td> </tr> <tr> <td><code class="highlighter-rouge">--build-arg</code></td> <td></td> <td>Set build-time variables</td> </tr> <tr> <td><code class="highlighter-rouge">--cache-from</code></td> <td></td> <td>Images to consider as cache sources</td> </tr> <tr> <td><code class="highlighter-rouge">--cgroup-parent</code></td> <td></td> <td>Optional parent cgroup for the container</td> </tr> <tr> <td><code class="highlighter-rouge">--compress</code></td> <td></td> <td>Compress the build context using gzip</td> </tr> <tr> <td><code class="highlighter-rouge">--cpu-period</code></td> <td></td> <td>Limit the CPU CFS (Completely Fair Scheduler) period</td> </tr> <tr> <td><code class="highlighter-rouge">--cpu-quota</code></td> <td></td> <td>Limit the CPU CFS (Completely Fair Scheduler) quota</td> </tr> <tr> <td><code class="highlighter-rouge">--cpu-shares , -c</code></td> <td></td> <td>CPU shares (relative weight)</td> </tr> <tr> <td><code class="highlighter-rouge">--cpuset-cpus</code></td> <td></td> <td>CPUs in which to allow execution (0-3, 0,1)</td> </tr> <tr> <td><code class="highlighter-rouge">--cpuset-mems</code></td> <td></td> <td>MEMs in which to allow execution (0-3, 0,1)</td> </tr> <tr> <td><code class="highlighter-rouge">--disable-content-trust</code></td> <td><code class="highlighter-rouge">true</code></td> <td>Skip image verification</td> </tr> <tr> <td><code class="highlighter-rouge">--file , -f</code></td> <td></td> <td>Name of the Dockerfile (Default is ‘PATH/Dockerfile’)</td> </tr> <tr> <td><code class="highlighter-rouge">--force-rm</code></td> <td></td> <td>Always remove intermediate containers</td> </tr> <tr> <td><code class="highlighter-rouge">--iidfile</code></td> <td></td> <td>Write the image ID to the file</td> </tr> <tr> <td><code class="highlighter-rouge">--isolation</code></td> <td></td> <td>Container isolation technology</td> </tr> <tr> <td><code class="highlighter-rouge">--label</code></td> <td></td> <td>Set metadata for an image</td> </tr> <tr> <td><code class="highlighter-rouge">--memory , -m</code></td> <td></td> <td>Memory limit</td> </tr> <tr> <td><code class="highlighter-rouge">--memory-swap</code></td> <td></td> <td>Swap limit equal to memory plus swap: ‘-1’ to enable unlimited swap</td> </tr> <tr> <td><code class="highlighter-rouge">--network</code></td> <td></td> <td><a href="https://docs.docker.com/engine/api/v1.25/" target="_blank" class="_"><span>API 1.25+</span></a><br>Set the networking mode for the RUN instructions during build</td> </tr> <tr> <td><code class="highlighter-rouge">--no-cache</code></td> <td></td> <td>Do not use cache when building the image</td> </tr> <tr> <td><code class="highlighter-rouge">--output , -o</code></td> <td></td> <td><a href="https://docs.docker.com/engine/api/v1.40/" target="_blank" class="_"><span>API 1.40+</span></a><br>Output destination (format: type=local,dest=path)</td> </tr> <tr> <td><code class="highlighter-rouge">--platform</code></td> <td></td> <td><a href="https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file" target="_blank" class="_"><span class="badge badge-warning" data-toggle="tooltip" title="" data-original-title="Read about experimental daemon options (in a new window).">experimental (daemon)</span></a><a href="https://docs.docker.com/engine/api/v1.32/" target="_blank" class="_"><span>API 1.32+</span></a><br>Set platform if server is multi-platform capable</td> </tr> <tr> <td><code class="highlighter-rouge">--progress</code></td> <td><code class="highlighter-rouge">auto</code></td> <td>Set type of progress output (auto, plain, tty). Use plain to show container output</td> </tr> <tr> <td><code class="highlighter-rouge">--pull</code></td> <td></td> <td>Always attempt to pull a newer version of the image</td> </tr> <tr> <td><code class="highlighter-rouge">--quiet , -q</code></td> <td></td> <td>Suppress the build output and print image ID on success</td> </tr> <tr> <td><code class="highlighter-rouge">--rm</code></td> <td><code class="highlighter-rouge">true</code></td> <td>Remove intermediate containers after a successful build</td> </tr> <tr> <td><code class="highlighter-rouge">--secret</code></td> <td></td> <td><a href="https://docs.docker.com/engine/api/v1.39/" target="_blank" class="_"><span>API 1.39+</span></a><br>Secret file to expose to the build (only if BuildKit enabled): id=mysecret,src=/local/secret</td> </tr> <tr> <td><code class="highlighter-rouge">--security-opt</code></td> <td></td> <td>Security options</td> </tr> <tr> <td><code class="highlighter-rouge">--shm-size</code></td> <td></td> <td>Size of /dev/shm</td> </tr> <tr> <td><code class="highlighter-rouge">--squash</code></td> <td></td> <td><a href="https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file" target="_blank" class="_"><span class="badge badge-warning" data-toggle="tooltip" title="" data-original-title="Read about experimental daemon options (in a new window).">experimental (daemon)</span></a><a href="https://docs.docker.com/engine/api/v1.25/" target="_blank" class="_"><span>API 1.25+</span></a><br>Squash newly built layers into a single new layer</td> </tr> <tr> <td><code class="highlighter-rouge">--ssh</code></td> <td></td> <td><a href="https://docs.docker.com/engine/api/v1.39/" target="_blank" class="_"><span>API 1.39+</span></a><br>SSH agent socket or keys to expose to the build (only if BuildKit enabled) (format: default|<id>[=<socket>|<key>[,<key>]])</key></key></socket></id></td> </tr> <tr> <td><code class="highlighter-rouge">--stream</code></td> <td></td> <td><a href="https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file" target="_blank" class="_"><span class="badge badge-warning" data-toggle="tooltip" title="" data-original-title="Read about experimental daemon options (in a new window).">experimental (daemon)</span></a><a href="https://docs.docker.com/engine/api/v1.31/" target="_blank" class="_"><span>API 1.31+</span></a><br>Stream attaches to server to negotiate build context</td> </tr> <tr> <td><code class="highlighter-rouge">--tag , -t</code></td> <td></td> <td>Name and optionally a tag in the ‘name:tag’ format</td> </tr> <tr> <td><code class="highlighter-rouge">--target</code></td> <td></td> <td>Set the target build stage to build.</td> </tr> <tr> <td><code class="highlighter-rouge">--ulimit</code></td> <td></td> <td>Ulimit options</td> </tr> <!-- end for option --></tbody></table>'
         },
         {
-            value: 'docker-builder',
-            label: 'Manage builds',
-            usage: '',
-            nb: '',
-        },
-        {
-            value: 'docker-buildx',
-            label: 'Build with BuildKit',
-            usage: '',
-            nb: '',
-        },
-        {
-            value: 'docker-checkpoint',
-            label: 'Checkpoint',
-            usage: '',
-            nb: '',
-        },
-        {
-            value: 'docker-cluster',
-            label: 'Cluster',
-            usage: '',
-            nb: '',
-        },
-        {
             value: 'docker-diff',
             label: 'Inspect changes to files or directories on a container’s filesystem',
             usage: 'docker diff CONTAINER',
@@ -59,25 +29,6 @@ export const secondaryOptions = {
             label: 'Create a new image from a container’s changes',
             usage: 'docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]',
             nb: 'It can be useful to commit a container’s file changes or settings into a new image. This allows you to debug a container by running an interactive shell, or to export a working dataset to another server. Generally, it is better to use Dockerfiles to manage your images in a documented and maintainable way. <br><br> <span class="board__option-title">Options</span> <table><thead> <tr> <td>Name, shorthand</td> <td>Default</td> <td>Description</td> </tr></thead><tbody> <tr> <td><code class="highlighter-rouge">--author , -a</code></td> <td></td> <td>Author (e.g., “John Hannibal Smith <a href="mailto:hannibal@a-team.com">hannibal@a-team.com</a>”)</td> </tr> <tr> <td><code class="highlighter-rouge">--change , -c</code></td> <td></td> <td>Apply Dockerfile instruction to the created image</td> </tr> <tr> <td><code class="highlighter-rouge">--message , -m</code></td> <td></td> <td>Commit message</td> </tr> <tr> <td><code class="highlighter-rouge">--pause , -p</code></td> <td><code class="highlighter-rouge">true</code></td> <td>Pause container during commit</td> </tr> <!-- end for option --></tbody></table>'
-        },
-
-        {
-            value: 'docker-config',
-            label: 'Manage configs',
-            usage: '',
-            nb: '',
-        },
-        {
-            value: 'docker-containers',
-            label: 'Manage containers',
-            usage: '',
-            nb: '',
-        },
-        {
-            value: 'docker-context',
-            label: 'Manage contexts',
-            usage: '',
-            nb: '',
         },
         {
             value: 'docker-events',
@@ -109,14 +60,6 @@ export const secondaryOptions = {
             usage: 'docker history [OPTIONS] IMAGE',
             nb: '<span class="board__option-title">Options</span> <table><thead> <tr> <td>Name, shorthand</td> <td>Default</td> <td>Description</td> </tr></thead><tbody> <tr> <td><code class="highlighter-rouge">--format</code></td> <td></td> <td>Pretty-print images using a Go template</td> </tr> <tr> <td><code class="highlighter-rouge">--human , -H</code></td> <td><code class="highlighter-rouge">true</code></td> <td>Print sizes and dates in human readable format</td> </tr> <tr> <td><code class="highlighter-rouge">--no-trunc</code></td> <td></td> <td>Don’t truncate output</td> </tr> <tr> <td><code class="highlighter-rouge">--quiet , -q</code></td> <td></td> <td>Only show numeric IDs</td> </tr> <!-- end for option --></tbody></table>'
         },
-
-        {
-            value: 'docker-image',
-            label: 'Manage images',
-            usage: '',
-            nb: '',
-        },
-
         {
             value: 'docker-create',
             label: 'Create a new container',
@@ -183,40 +126,12 @@ export const secondaryOptions = {
             usage: 'docker logs [OPTIONS] CONTAINER',
             nb: 'The docker logs command batch-retrieves logs present at the time of execution. <br><br> <span class="board__option-title">Options</span> <table><thead> <tr> <td>Name, shorthand</td> <td>Default</td> <td>Description</td> </tr></thead><tbody> <tr> <td><code class="highlighter-rouge">--details</code></td> <td></td> <td>Show extra details provided to logs</td> </tr> <tr> <td><code class="highlighter-rouge">--follow , -f</code></td> <td></td> <td>Follow log output</td> </tr> <tr> <td><code class="highlighter-rouge">--since</code></td> <td></td> <td>Show logs since timestamp (e.g. 2013-01-02T13:23:37) or relative (e.g. 42m for 42 minutes)</td> </tr> <tr> <td><code class="highlighter-rouge">--tail</code></td> <td><code class="highlighter-rouge">all</code></td> <td>Number of lines to show from the end of the logs</td> </tr> <tr> <td><code class="highlighter-rouge">--timestamps , -t</code></td> <td></td> <td>Show timestamps</td> </tr> <tr> <td><code class="highlighter-rouge">--until</code></td> <td></td> <td><a href="https://docs.docker.com/engine/api/v1.35/" target="_blank" class="_"><span>API 1.35+</span></a><br>Show logs before a timestamp (e.g. 2013-01-02T13:23:37) or relative (e.g. 42m for 42 minutes)</td> </tr> <!-- end for option --></tbody></table>'
         },
-
-        {
-            value: 'docker-manifest',
-            label: 'Manage Docker image manifests and manifest lists',
-            usage: '',
-            nb: '',
-        },
-        {
-            value: 'docker-network',
-            label: 'Manage networks',
-            usage: '',
-            nb: '',
-        },
-        {
-            value: 'docker-node',
-            label: 'Manage Swarm nodes',
-            usage: '',
-            nb: '',
-        },
-
         {
             value: 'docker-pause',
             label: 'Pause all processes within one or more containers',
             usage: 'docker pause CONTAINER [CONTAINER...]',
             nb: 'The docker pause command suspends all processes in the specified containers. On Linux, this uses the freezer cgroup. Traditionally, when suspending a process the SIGSTOP signal is used, which is observable by the process being suspended. With the freezer cgroup the process is unaware, and unable to capture, that it is being suspended, and subsequently resumed. On Windows, only Hyper-V containers can be paused.'
         },
-
-        {
-            value: 'docker-plugin',
-            label: 'Manage plugins',
-            usage: '',
-            nb: '',
-        },
-
         {
             value: 'docker-port',
             label: 'List port mappings or a specific mapping for the container',
@@ -241,14 +156,6 @@ export const secondaryOptions = {
             usage: 'docker push [OPTIONS] NAME[:TAG]',
             nb: 'Use docker push to share your images to the Docker Hub registry or to a self-hosted one. Refer to the docker tag reference for more information about valid image and tag names. Killing the docker push process, for example by pressing CTRL-c while it is running in a terminal, terminates the push operation.<br><br> <span class="board__option-title">Options</span> <table><thead><tr><td>Name, shorthand</td><td>Default</td><td>Description</td></tr></thead><tbody><tr><td><code class="highlighter-rouge">--disable-content-trust</code></td><td><code class="highlighter-rouge">true</code></td><td>Skip image signing</td></tr></tbody></table>'
         },
-
-        {
-            value: 'docker-registry',
-            label: 'Manage Docker registries',
-            usage: '',
-            nb: '',
-        },
-
         {
             value: 'docker-rename',
             label: 'Rename a container',
@@ -291,26 +198,6 @@ export const secondaryOptions = {
             usage: 'docker search [OPTIONS] TERM',
             nb: 'Search Docker Hub for images. See Find Public Images on Docker Hub for more details on finding shared images from the command line.<br><br> <span class="board__option-title">Options</span> <table><thead><tr><td>Name, shorthand</td><td>Default</td><td>Description</td></tr></thead><tbody><tr><td><code class="highlighter-rouge">--automated</code></td><td></td><td><span class="badge badge-danger">deprecated</span>&nbsp;<br>Only show automated builds</td></tr><tr><td><code class="highlighter-rouge">--filter , -f</code></td><td></td><td>Filter output based on conditions provided</td></tr><tr><td><code class="highlighter-rouge">--format</code></td><td></td><td>Pretty-print search using a Go template</td></tr><tr><td><code class="highlighter-rouge">--limit</code></td><td><code class="highlighter-rouge">25</code></td><td>Max number of search results</td></tr><tr><td><code class="highlighter-rouge">--no-trunc</code></td><td></td><td>Don’t truncate output</td></tr><tr><td><code class="highlighter-rouge">--stars , -s</code></td><td></td><td><span class="badge badge-danger">deprecated</span>&nbsp;<br>Only displays with at least x stars</td></tr></tbody></table>'
         },
-
-        {
-            value: 'docker-secret',
-            label: 'Manage Docker secrets',
-            usage: '',
-            nb: '',
-        },
-        {
-            value: 'docker-service',
-            label: 'Manage services',
-            usage: '',
-            nb: '',
-        },
-        {
-            value: 'docker-stacks',
-            label: 'Manage Docker stacks',
-            usage: '',
-            nb: '',
-        },
-
         {
             value: 'docker-start',
             label: 'Start one or more stopped containers',
@@ -329,26 +216,6 @@ export const secondaryOptions = {
             usage: 'docker stop [OPTIONS] CONTAINER [CONTAINER...]',
             nb: 'The main process inside the container will receive SIGTERM, and after a grace period, SIGKILL. <br><br> <span class="board__option-title">Options</span> <table><thead><tr><td>Name, shorthand</td><td>Default</td><td>Description</td></tr></thead><tbody><tr><td><code class="highlighter-rouge">--time , -t</code></td><td><code class="highlighter-rouge">10</code></td><td>Seconds to wait for stop before killing it</td></tr></tbody></table>'
         },
-
-        {
-            value: 'docker-swarm',
-            label: 'Manage Swarm',
-            usage: '',
-            nb: '',
-        },
-        {
-            value: 'docker-system',
-            label: 'Manage Docker',
-            usage: '',
-            nb: '',
-        },
-        {
-            value: 'docker-template',
-            label: 'Use templates to quickly create new services',
-            usage: '',
-            nb: '',
-        },
-
         {
             value: 'docker-tag',
             label: 'Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE',
@@ -361,14 +228,6 @@ export const secondaryOptions = {
             usage: 'docker top CONTAINER [ps OPTIONS]',
             nb: ''
         },
-
-        {
-            value: 'docker-trust',
-            label: 'Manage trust on Docker images',
-            usage: '',
-            nb: '',
-        },
-
         {
             value: 'docker-unpouse',
             label: 'Unpause all processes within one or more containers',
@@ -387,14 +246,6 @@ export const secondaryOptions = {
             usage: 'docker version [OPTIONS]',
             nb: 'By default, this will render all version information in an easy to read layout. If a format is specified, the given template will be executed instead. <br><br> <span class="board__option-title">Options</span> <table><thead> <tr> <td>Name, shorthand</td> <td>Default</td> <td>Description</td> </tr></thead><tbody> <tr> <td><code class="highlighter-rouge">--format , -f</code></td> <td></td> <td>Format the output using the given Go template</td> </tr> <tr> <td><code class="highlighter-rouge">--kubeconfig</code></td> <td></td> <td><span class="badge badge-info" data-toggle="tooltip" title="" data-original-title="This option works for the Kubernetes orchestrator.">Kubernetes</span><br>Kubernetes config file</td> </tr> <!-- end for option --></tbody></table>'
         },
-
-        {
-            value: 'docker-volume',
-            label: 'Manage volumes',
-            usage: '',
-            nb: ''
-        },
-
         {
             value: 'docker-wait',
             label: 'Block until one or more containers stop, then print their exit codes',

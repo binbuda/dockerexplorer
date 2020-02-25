@@ -370,7 +370,7 @@ export const tertiaryOptions = {
         },
         {
             value: 'docker-config-inspect',
-            label: 'docker config inspect [OPTIONS] CONFIG [CONFIG...]',
+            label: 'Display detailed information on one or more configs            ',
             usage: 'docker config inspect [OPTIONS] CONFIG [CONFIG...]',
             nb: 'API 1.30+  The client and daemon API must both be at least 1.30 to use this command. Use the docker version command on the client to check your client and daemon API versions. <br><br> Swarm This command works with the Swarm orchestrator.  <br><br> <span class="board__option-title">Options</span> <table><thead> <tr> <td>Name, shorthand</td> <td>Default</td> <td>Description</td> </tr></thead><tbody> <tr> <td><code>--format , -f</code></td> <td></td> <td>Format the output using the given Go template</td> </tr> <tr> <td><code>--pretty</code></td> <td></td> <td>Print the information in a human friendly format</td> </tr> </tbody></table>'
         },
@@ -862,13 +862,13 @@ export const tertiaryOptions = {
     "docker-template": [
         {
             value: 'docker-template-config-set',
-            label: 'set default values for docker template',
+            label: 'Set default values for docker template',
             usage: 'docker template config set',
             nb: 'This command is only available on Docker Enterprise Edition. Learn more about <a href="https://docs.docker.com/ee/supported-platforms/" target="_blank">Docker Enterprise products</a>. <br><br> This command is experimental on the Docker client <br> It should not be used in production environments. <br> To enable experimental features in the Docker CLI, edit the <a href="https://docs.docker.com/engine/reference/commandline/cli/#configuration-files">config.json</a> and set <code class="highlighter-rouge">experimental</code> to <code class="highlighter-rouge">enabled</code>. You can go <a href="https://docs.docker.com/engine/reference/commandline/cli/#experimental-features">here</a> for more information. <br><br> <span class="board__option-title">Options</span> <table><thead> <tr> <td>Name, shorthand</td> <td>Default</td> <td>Description</td> </tr></thead><tbody> <tr> <td><code class="highlighter-rouge">--feedback</code></td> <td></td> <td>Send anonymous feedback about usage (performance, failure status, os, version)</td> </tr> <tr> <td><code class="highlighter-rouge">--no-feedback</code></td> <td></td> <td>Don’t send anonymous feedback</td> </tr> <tr> <td><code class="highlighter-rouge">--org</code></td> <td></td> <td>Set default organization / docker hub user</td> </tr> <tr> <td><code class="highlighter-rouge">--server</code></td> <td></td> <td>Set default registry server (host[:port])</td> </tr> <!-- end for option --></tbody></table>'
         },
         {
             value: 'docker-template-config-view',
-            label: 'view default values for docker template',
+            label: 'View default values for docker template',
             usage: 'docker template config view',
             nb: 'This command is only available on Docker Enterprise Edition. Learn more about <a href="https://docs.docker.com/ee/supported-platforms/" target="_blank">Docker Enterprise products</a>. <br><br> This command is experimental on the Docker client <br> It should not be used in production environments. <br> To enable experimental features in the Docker CLI, edit the <a href="https://docs.docker.com/engine/reference/commandline/cli/#configuration-files">config.json</a> and set <code class="highlighter-rouge">experimental</code> to <code class="highlighter-rouge">enabled</code>. You can go <a href="https://docs.docker.com/engine/reference/commandline/cli/#experimental-features">here</a> for more information. <br><br> <span class="board__option-title">Options</span> <table><thead> <tr> <td>Name, shorthand</td> <td>Default</td> <td>Description</td> </tr></thead><tbody> <tr> <td><code class="highlighter-rouge">--format</code></td> <td><code class="highlighter-rouge">yaml</code></td> <td>Configure the output format (json|yaml)</td> </tr> <!-- end for option --></tbody></table>'
         },
@@ -924,7 +924,7 @@ export const tertiaryOptions = {
         },
         {
             value: 'docker-trust-revoke',
-            label: 'docker trust revoke removes signatures from tags in signed repositories.',
+            label: 'Remove signatures from tags in signed repositories.',
             usage: 'docker trust revoke [OPTIONS] IMAGE[:TAG]',
             nb: ''
         },
