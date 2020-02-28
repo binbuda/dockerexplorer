@@ -1,3 +1,4 @@
+
 # DockerExplorer
 ### Table of Contents
 [Intro](https://github.com/binbuda/dockerexplorer/blob/master/README.md#intro)
@@ -9,9 +10,9 @@
 [RoadMap](https://github.com/binbuda/dockerexplorer/blob/master/README.md#roadmap)
 
 ### Intro
-Last year, we came across [Sarah Drasner's array explorer](https://github.com/sdras/array-explorer). It is a really cool resource for anyone to easily figure out the best JS array method to use. We loved it and decided to build something similar for Docker.
+Last year, we came across to [Gitexplorer](https://github.com/summitech/gitexplorer). We loved it and decided to build something similar for Docker.
 
-Website: [Find the right commands you need quickly, without digging through docker.com](https://dockerexplorer.com)
+Website: Find the right commands you need quickly, without digging through [docker.com](https://dockerexplorer.com)
 
 ### Tech Stack
 - React
